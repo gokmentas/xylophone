@@ -21,7 +21,7 @@ class XylophoneApp extends StatelessWidget {
           onPressed: () {
             playSound(soundNumber);
           },
-          child: const Text(''),
+          child: const Text('deneme'),
         ),
       ),
     );
