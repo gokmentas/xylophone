@@ -17,11 +17,11 @@ class XylophoneApp extends StatelessWidget {
     return Expanded(
       child: Container(
         color: color,
-        child: TextButton(
+        child: MaterialButton(
+          enableFeedback: false,
           onPressed: () {
             playSound(soundNumber);
           },
-          child: const Text('deneme'),
         ),
       ),
     );
@@ -36,13 +36,13 @@ class XylophoneApp extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              buildKey(soundNumber: 1, color: Colors.red),
-              buildKey(soundNumber: 2, color: Colors.orange),
-              buildKey(soundNumber: 3, color: Colors.yellow),
-              buildKey(soundNumber: 4, color: Colors.green),
-              buildKey(soundNumber: 5, color: Colors.teal),
-              buildKey(soundNumber: 6, color: Colors.blue),
-              buildKey(soundNumber: 7, color: Colors.purple),
+              buildKey(soundNumber: 1, color: Colors.blue.shade300),
+              buildKey(soundNumber: 2, color: Colors.blue.shade400),
+              buildKey(soundNumber: 3, color: Colors.blue.shade500),
+              buildKey(soundNumber: 4, color: Colors.blue.shade600),
+              buildKey(soundNumber: 5, color: Colors.blue.shade700),
+              buildKey(soundNumber: 6, color: Colors.blue.shade800),
+              buildKey(soundNumber: 7, color: Colors.blue.shade900),
             ],
           ),
         ),
